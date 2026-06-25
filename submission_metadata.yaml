@@ -1,0 +1,75 @@
+# Redrob Hackathon — Submission Metadata
+
+team_name: "IndiaRuns-Challenge"
+
+primary_contact:
+  name: "Vishwanth Munikuntla"
+  email: "primary@example.com"
+  phone: "+91-XXXXXXXXXX"
+
+team_members:
+  - name: "Vishwanth Munikuntla"
+    email: "primary@example.com"
+    role: "ML Engineer / Team Lead"
+
+# ============================================================================
+# Code and reproducibility
+# ============================================================================
+github_repo: "https://github.com/YOUR_USERNAME/IndiaRuns_Datachallenge"
+
+sandbox_link: "https://huggingface.co/spaces/YOUR_USERNAME/redrob-ranker"
+
+reproduce_command: "python rank.py --candidates ./Dataset/candidates.jsonl --out ./submission.csv"
+
+# ============================================================================
+# Compute environment
+# ============================================================================
+compute:
+  platform: "MacBook Pro (Apple Silicon)"
+  cpu_cores: 8
+  ram_gb: 8
+  python_version: "3.11"
+  os: "macOS"
+  uses_gpu_for_inference: false
+  has_network_during_ranking: false
+  pre_computation_required: false
+  pre_computation_time_minutes: 0
+
+# ============================================================================
+# AI tools declaration
+# ============================================================================
+ai_tools_used:
+  - "Antigravity IDE (Google DeepMind)"
+
+ai_usage_summary: |
+  Used Antigravity AI IDE for code architecture, implementation, and code review.
+  No candidate data was fed to any external LLM.
+  All ranking logic, weights, and design decisions are original.
+
+# ============================================================================
+# Approach summary
+# ============================================================================
+methodology_summary: |
+  Multi-stage hybrid ranker. Three components:
+  (1) Stage 1 — Bi-Encoder (all-MiniLM-L6-v2): Dense semantic retrieval over all
+  50K candidates using cosine similarity to retrieve top-500. Handles the
+  semantic gap between JD vocabulary and candidate text.
+  (2) Stage 2 — Cross-Encoder (ms-marco-MiniLM-L-6-v2): Pairwise deep re-ranking
+  of top-500 to top-200. Joint attention over (JD, candidate) pairs gives
+  research-grade relevance scoring at acceptable CPU cost.
+  (3) Stage 3 — Hybrid Fusion: Weighted combination of cross-encoder score (55%)
+  with 9 behavioral signals (45%): GitHub activity, recruiter response rate,
+  interview completion, profile completeness, offer acceptance, recency of
+  last login, Redrob skill assessments, open-to-work flag, notice period.
+  JD-specific consultancy-only penalty applied (25% score reduction) per
+  explicit JD red flag. Runtime: ~5 min on CPU for 50K candidates.
+
+# ============================================================================
+# Declarations
+# ============================================================================
+declarations:
+  read_submission_spec: true
+  code_is_original_work: true
+  no_collusion: true
+  honeypot_check_done: false
+  reproduction_tested: true

@@ -1,101 +1,101 @@
 candidate_id,rank,score,reasoning
-CAND_0002025,1,0.9900,Senior AI Engineer with 5.9 yrs; 15 AI core skills; response rate 0.80.
-CAND_0093547,2,0.9874,Senior Machine Learning Engineer with 2.9 yrs; 14 AI core skills; response rate 0.75.
-CAND_0071974,3,0.9653,Senior AI Engineer with 7.8 yrs; 15 AI core skills; response rate 0.76.
-CAND_0033861,4,0.9627,Senior NLP Engineer with 8.0 yrs; 16 AI core skills; response rate 0.16.
-CAND_0055992,5,0.9620,AI Engineer with 16.9 yrs; 13 AI core skills; response rate 0.72.
-CAND_0094759,6,0.9493,Lead AI Engineer with 8.6 yrs; 13 AI core skills; response rate 0.11.
-CAND_0007460,7,0.8640,AI Engineer with 4.7 yrs; 13 AI core skills; response rate 0.48.
-CAND_0091534,8,0.8612,AI Engineer with 16.6 yrs; 6 AI core skills; response rate 0.84.
-CAND_0044883,9,0.8606,AI Engineer with 6.3 yrs; 11 AI core skills; response rate 0.84.
-CAND_0058575,10,0.8452,AI Engineer with 5.8 yrs; 7 AI core skills; response rate 0.69.
-CAND_0060072,11,0.8392,Staff Machine Learning Engineer with 5.7 yrs; 12 AI core skills; response rate 0.10.
-CAND_0006567,12,0.8341,Senior AI Engineer with 7.9 yrs; 9 AI core skills; response rate 0.79.
-CAND_0053591,13,0.8304,AI Engineer with 5.3 yrs; 9 AI core skills; response rate 0.81.
-CAND_0074325,14,0.7710,AI Research Engineer with 3.9 yrs; 10 AI core skills; response rate 0.47.
-CAND_0098846,15,0.7568,AI Engineer with 7.6 yrs; 10 AI core skills; response rate 0.62.
-CAND_0083307,16,0.7229,Search Engineer with 7.8 yrs; 15 AI core skills; response rate 0.70.
-CAND_0024620,17,0.7175,AI Engineer with 5.9 yrs; 10 AI core skills; response rate 0.41.
-CAND_0039308,18,0.6262,AI Research Engineer with 5.6 yrs; 8 AI core skills; response rate 0.36.
-CAND_0069773,19,0.6188,AI Research Engineer with 6.0 yrs; 9 AI core skills; response rate 0.28.
-CAND_0061175,20,0.5139,AI Research Engineer with 6.7 yrs; 10 AI core skills; response rate 0.48.
-CAND_0094685,21,0.5005,AI Research Engineer with 3.5 yrs; 7 AI core skills; response rate 0.68.
-CAND_0016170,22,0.4497,AI Research Engineer with 6.8 yrs; 7 AI core skills; response rate 0.52.
-CAND_0098621,23,0.3073,HR Manager with 5.7 yrs; 11 AI core skills; response rate 0.67.
-CAND_0019427,24,0.3019,Civil Engineer with 5.3 yrs; 14 AI core skills; response rate 0.65.
-CAND_0054948,25,0.2999,Civil Engineer with 3.8 yrs; 11 AI core skills; response rate 0.13.
-CAND_0090597,26,0.2964,Civil Engineer with 5.2 yrs; 8 AI core skills; response rate 0.45.
-CAND_0039329,27,0.2900,Operations Manager with 2.9 yrs; 10 AI core skills; response rate 0.57.
-CAND_0037426,28,0.2888,Civil Engineer with 7.2 yrs; 11 AI core skills; response rate 0.75.
-CAND_0065541,29,0.2804,HR Manager with 1.4 yrs; 12 AI core skills; response rate 0.53.
-CAND_0024407,30,0.2782,Civil Engineer with 5.3 yrs; 9 AI core skills; response rate 0.64.
-CAND_0076952,31,0.2757,Business Analyst with 6.2 yrs; 8 AI core skills; response rate 0.11.
-CAND_0078121,32,0.2749,Civil Engineer with 7.5 yrs; 11 AI core skills; response rate 0.07.
-CAND_0019294,33,0.2737,Sales Executive with 1.0 yrs; 10 AI core skills; response rate 0.77.
-CAND_0048737,34,0.2691,HR Manager with 3.6 yrs; 9 AI core skills; response rate 0.32.
-CAND_0049272,35,0.2690,Operations Manager with 4.9 yrs; 10 AI core skills; response rate 0.37.
-CAND_0074533,36,0.2690,Mechanical Engineer with 5.5 yrs; 9 AI core skills; response rate 0.22.
-CAND_0025920,37,0.2684,Civil Engineer with 2.4 yrs; 10 AI core skills; response rate 0.59.
-CAND_0096984,38,0.2680,Civil Engineer with 6.3 yrs; 10 AI core skills; response rate 0.29.
-CAND_0056815,39,0.2645,HR Manager with 2.4 yrs; 10 AI core skills; response rate 0.61.
-CAND_0013090,40,0.2616,Civil Engineer with 3.4 yrs; 13 AI core skills; response rate 0.36.
-CAND_0071857,41,0.2614,HR Manager with 3.9 yrs; 9 AI core skills; response rate 0.49.
-CAND_0018300,42,0.2596,Mechanical Engineer with 8.7 yrs; 10 AI core skills; response rate 0.44.
-CAND_0035214,43,0.2595,Mechanical Engineer with 5.3 yrs; 10 AI core skills; response rate 0.38.
-CAND_0075469,44,0.2593,Customer Support with 5.4 yrs; 11 AI core skills; response rate 0.72.
-CAND_0069720,45,0.2589,Graphic Designer with 1.6 yrs; 12 AI core skills; response rate 0.23.
-CAND_0058690,46,0.2582,HR Manager with 2.0 yrs; 10 AI core skills; response rate 0.17.
-CAND_0043224,47,0.2580,HR Manager with 5.4 yrs; 9 AI core skills; response rate 0.16.
-CAND_0004980,48,0.2571,Civil Engineer with 1.4 yrs; 12 AI core skills; response rate 0.61.
-CAND_0022801,49,0.2547,Civil Engineer with 7.2 yrs; 11 AI core skills; response rate 0.65.
-CAND_0039550,50,0.2540,HR Manager with 3.1 yrs; 12 AI core skills; response rate 0.46.
-CAND_0015823,51,0.2538,Civil Engineer with 6.6 yrs; 9 AI core skills; response rate 0.70.
-CAND_0015367,52,0.2525,Civil Engineer with 1.9 yrs; 9 AI core skills; response rate 0.54.
-CAND_0020974,53,0.2518,Civil Engineer with 1.1 yrs; 10 AI core skills; response rate 0.10.
-CAND_0044441,54,0.2506,Civil Engineer with 2.5 yrs; 10 AI core skills; response rate 0.13.
-CAND_0068102,55,0.2491,HR Manager with 2.8 yrs; 11 AI core skills; response rate 0.20.
-CAND_0096621,56,0.2488,Civil Engineer with 2.2 yrs; 7 AI core skills; response rate 0.41.
-CAND_0084838,57,0.2473,HR Manager with 1.3 yrs; 10 AI core skills; response rate 0.57.
-CAND_0025354,58,0.2464,Customer Support with 4.2 yrs; 8 AI core skills; response rate 0.61.
-CAND_0092362,59,0.2463,Mechanical Engineer with 4.6 yrs; 7 AI core skills; response rate 0.69.
-CAND_0041349,60,0.2461,Operations Manager with 1.4 yrs; 8 AI core skills; response rate 0.61.
-CAND_0039347,61,0.2451,HR Manager with 6.4 yrs; 9 AI core skills; response rate 0.22.
-CAND_0004193,62,0.2437,HR Manager with 2.2 yrs; 8 AI core skills; response rate 0.63.
-CAND_0022826,63,0.2432,Customer Support with 2.8 yrs; 12 AI core skills; response rate 0.06.
-CAND_0095151,64,0.2431,HR Manager with 5.5 yrs; 12 AI core skills; response rate 0.55.
-CAND_0000932,65,0.2429,Operations Manager with 6.9 yrs; 11 AI core skills; response rate 0.72.
-CAND_0065327,66,0.2428,Software Engineer with 6.6 yrs; 3 AI core skills; response rate 0.22.
-CAND_0052324,67,0.2426,HR Manager with 4.7 yrs; 8 AI core skills; response rate 0.75.
-CAND_0000906,68,0.2425,Marketing Manager with 3.0 yrs; 9 AI core skills; response rate 0.65.
-CAND_0030971,69,0.2424,Civil Engineer with 1.7 yrs; 8 AI core skills; response rate 0.35.
-CAND_0053258,70,0.2420,Operations Manager with 1.6 yrs; 9 AI core skills; response rate 0.74.
-CAND_0098680,71,0.2413,Civil Engineer with 3.2 yrs; 10 AI core skills; response rate 0.76.
-CAND_0082159,72,0.2411,Mechanical Engineer with 5.1 yrs; 8 AI core skills; response rate 0.57.
-CAND_0007177,73,0.2401,HR Manager with 4.0 yrs; 11 AI core skills; response rate 0.44.
-CAND_0097252,74,0.2400,Civil Engineer with 4.3 yrs; 11 AI core skills; response rate 0.59.
-CAND_0009169,75,0.2398,Project Manager with 3.5 yrs; 12 AI core skills; response rate 0.18.
-CAND_0072918,76,0.2395,Software Engineer with 7.1 yrs; 2 AI core skills; response rate 0.42.
-CAND_0013229,77,0.2390,Mechanical Engineer with 5.5 yrs; 11 AI core skills; response rate 0.77.
-CAND_0096126,78,0.2378,Civil Engineer with 4.5 yrs; 10 AI core skills; response rate 0.75.
-CAND_0073246,79,0.2375,HR Manager with 3.1 yrs; 8 AI core skills; response rate 0.42.
-CAND_0053797,80,0.2365,Software Engineer with 1.2 yrs; 2 AI core skills; response rate 0.75.
-CAND_0069889,81,0.2351,Civil Engineer with 2.5 yrs; 9 AI core skills; response rate 0.66.
-CAND_0083203,82,0.2334,Operations Manager with 3.4 yrs; 9 AI core skills; response rate 0.20.
-CAND_0021102,83,0.2332,HR Manager with 2.5 yrs; 11 AI core skills; response rate 0.45.
-CAND_0096408,84,0.2322,Project Manager with 4.6 yrs; 7 AI core skills; response rate 0.33.
-CAND_0092412,85,0.2313,Software Engineer with 3.6 yrs; 3 AI core skills; response rate 0.21.
-CAND_0047368,86,0.2306,Software Engineer with 8.9 yrs; 5 AI core skills; response rate 0.29.
-CAND_0064581,87,0.2295,HR Manager with 2.5 yrs; 11 AI core skills; response rate 0.39.
-CAND_0031266,88,0.2284,Civil Engineer with 6.3 yrs; 9 AI core skills; response rate 0.51.
-CAND_0043481,89,0.2274,Civil Engineer with 1.8 yrs; 10 AI core skills; response rate 0.29.
-CAND_0098321,90,0.2263,Civil Engineer with 4.1 yrs; 9 AI core skills; response rate 0.21.
-CAND_0048840,91,0.2258,HR Manager with 1.6 yrs; 7 AI core skills; response rate 0.17.
-CAND_0031225,92,0.2231,Mechanical Engineer with 4.9 yrs; 8 AI core skills; response rate 0.76.
-CAND_0040627,93,0.2209,Software Engineer with 10.0 yrs; 4 AI core skills; response rate 0.68.
-CAND_0099507,94,0.2206,Software Engineer with 1.2 yrs; 5 AI core skills; response rate 0.72.
-CAND_0056158,95,0.2191,Operations Manager with 3.1 yrs; 7 AI core skills; response rate 0.28.
-CAND_0066831,96,0.2184,Software Engineer with 2.9 yrs; 9 AI core skills; response rate 0.58.
-CAND_0064289,97,0.2116,Software Engineer with 5.0 yrs; 3 AI core skills; response rate 0.56.
-CAND_0081472,98,0.2025,Civil Engineer with 2.2 yrs; 9 AI core skills; response rate 0.75.
-CAND_0021255,99,0.2005,Operations Manager with 2.2 yrs; 11 AI core skills; response rate 0.78.
-CAND_0053064,100,0.2000,Civil Engineer with 1.7 yrs; 9 AI core skills; response rate 0.53.
+CAND_0046525,1,1.000000,"Senior Machine Learning Engineer with 6 years of experience at Genpact AI, with production-level expertise in Elasticsearch, Machine Learning, NLP, Qdrant. Open to work with a 60-day notice period and good recruiter responsiveness."
+CAND_0018499,2,0.943170,"Senior Machine Learning Engineer with 7 years of experience at Zomato, with production-level expertise in Pinecone, Milvus, QLoRA, RAG. Actively seeking roles, highly responsive, and available within 30 days. Strong GitHub activity (score: 95)."
+CAND_0041611,3,0.894681,"Staff Machine Learning Engineer with 6 years of experience at Locobuzz, with production-level expertise in Qdrant, NLP, BM25, QLoRA. Not currently flagged as open to work — may need passive outreach."
+CAND_0094759,4,0.888596,"Lead AI Engineer with 9 years of experience at Meta, with production-level expertise in Qdrant, NLP, FAISS. Not currently flagged as open to work — may need passive outreach. Strong GitHub activity (score: 76)."
+CAND_0077337,5,0.862311,"Staff Machine Learning Engineer with 7 years of experience at Paytm, with production-level expertise in QLoRA, Pinecone, BM25, RAG. Open to work with a 60-day notice period and good recruiter responsiveness. Strong GitHub activity (score: 68)."
+CAND_0002025,6,0.837887,"Senior AI Engineer with 6 years of experience at Apple, with production-level expertise in FAISS, QLoRA, NLP, Pinecone. Actively seeking roles, highly responsive, and available within 30 days. Strong GitHub activity (score: 97)."
+CAND_0088025,7,0.831690,"Staff Machine Learning Engineer with 9 years of experience at Yellow.ai, with production-level expertise in Pinecone, QLoRA, RAG, LoRA. Open to work with a 90-day notice period and good recruiter responsiveness. Strong GitHub activity (score: 75)."
+CAND_0033861,8,0.807322,"Senior NLP Engineer with 8 years of experience at Mad Street Den, with production-level expertise in LoRA, Machine Learning, Elasticsearch, Pinecone. Not currently flagged as open to work — may need passive outreach."
+CAND_0039754,9,0.803406,"Senior Applied Scientist with 16 years of experience at Meta, with production-level expertise in Qdrant, NLP, Machine Learning, BM25. Actively seeking roles, highly responsive, and available within 30 days. Strong GitHub activity (score: 78)."
+CAND_0081846,10,0.769765,"Lead AI Engineer with 7 years of experience at Razorpay, with production-level expertise in Elasticsearch, BM25, Machine Learning, Qdrant. Actively seeking roles, highly responsive, and available within 30 days."
+CAND_0055905,11,0.768420,"Senior Machine Learning Engineer with 8 years of experience at Flipkart, with production-level expertise in Elasticsearch. Actively seeking roles, highly responsive, and available within 30 days."
+CAND_0086022,12,0.615263,"Senior Applied Scientist with 5 years of experience at Sarvam AI, with production-level expertise in Elasticsearch, QLoRA, Pinecone, NLP. Open to work with a 0-day notice period and good recruiter responsiveness. Strong GitHub activity (score: 75)."
+CAND_0005260,13,0.605218,"Senior NLP Engineer with 5 years of experience at Netflix, with production-level expertise in NLP, LoRA, RAG. Not currently flagged as open to work — may need passive outreach."
+CAND_0092278,14,0.600409,"Senior NLP Engineer with 7 years of experience at Microsoft, with production-level expertise in Machine Learning, QLoRA, NLP, Elasticsearch. Not currently flagged as open to work — may need passive outreach."
+CAND_0055992,15,0.564287,"AI Engineer with 17 years of experience at CRED, with production-level expertise in FAISS, RAG, Milvus. Open to work with a 60-day notice period and good recruiter responsiveness. Strong GitHub activity (score: 65)."
+CAND_0061265,16,0.559365,"Recommendation Systems Engineer with 7 years of experience at Zoho, with production-level expertise in Qdrant, QLoRA, Milvus. Open to work with a 120-day notice period and good recruiter responsiveness. Strong GitHub activity (score: 80)."
+CAND_0008425,17,0.558105,"Senior NLP Engineer with 8 years of experience at Ola, with production-level expertise in Qdrant, NLP, LoRA. Open to work with a 90-day notice period and good recruiter responsiveness. Strong GitHub activity (score: 53)."
+CAND_0065195,18,0.540496,"Search Engineer with 5 years of experience at CRED, with production-level expertise in QLoRA, Elasticsearch, Qdrant. Open to work with a 45-day notice period and good recruiter responsiveness. Strong GitHub activity (score: 87)."
+CAND_0058575,19,0.532898,"AI Engineer with 6 years of experience at Krutrim, with production-level expertise in Machine Learning, Pinecone. Open to work with a 90-day notice period and good recruiter responsiveness."
+CAND_0076251,20,0.530177,"Search Engineer with 8 years of experience at Haptik, with production-level expertise in Elasticsearch. Open to work with a 60-day notice period and good recruiter responsiveness."
+CAND_0071974,21,0.527320,"Senior AI Engineer with 8 years of experience at Netflix, with production-level expertise in LoRA, BM25, Pinecone, Machine Learning. Open to work with a 45-day notice period and good recruiter responsiveness. Strong GitHub activity (score: 83)."
+CAND_0029367,22,0.523977,"Senior Data Scientist with 6 years of experience at Rephrase.ai, with production-level expertise in QLoRA, FAISS, RAG, NLP. Open to work with a 90-day notice period and good recruiter responsiveness."
+CAND_0010257,23,0.517922,"Senior Data Scientist with 6 years of experience at Google, with production-level expertise in Milvus, Qdrant, Machine Learning. Open to work with a 120-day notice period and good recruiter responsiveness."
+CAND_0041610,24,0.506889,"Recommendation Systems Engineer with 7 years of experience at Zoho, with production-level expertise in LoRA, Elasticsearch, BM25. Open to work with a 30-day notice period and good recruiter responsiveness. Strong GitHub activity (score: 52)."
+CAND_0005649,25,0.502119,"Senior Data Scientist with 7 years of experience at Sarvam AI, with production-level expertise in QLoRA, RAG. Open to work with a 90-day notice period and good recruiter responsiveness. Strong GitHub activity (score: 81)."
+CAND_0081852,26,0.487840,"Senior Data Scientist with 6 years of experience at Mad Street Den, with production-level expertise in Milvus, LoRA. Open to work with a 45-day notice period and good recruiter responsiveness. Strong GitHub activity (score: 88)."
+CAND_0011687,27,0.479831,"Senior NLP Engineer with 8 years of experience at Niramai, with production-level expertise in FAISS. Actively seeking roles, highly responsive, and available within 30 days. Strong GitHub activity (score: 76)."
+CAND_0015528,28,0.472376,"Applied ML Engineer with 7 years of experience at Krutrim, with production-level expertise in LoRA, FAISS. Not currently flagged as open to work — may need passive outreach. Strong GitHub activity (score: 51)."
+CAND_0079064,29,0.459628,"Senior Data Scientist with 5 years of experience at Niramai, with production-level expertise in NLP, Pinecone, QLoRA. Open to work with a 120-day notice period and good recruiter responsiveness."
+CAND_0093547,30,0.456695,"Senior Machine Learning Engineer with 3 years of experience at PhonePe, with production-level expertise in RAG, QLoRA, Machine Learning, Milvus. Not currently flagged as open to work — may need passive outreach. Strong GitHub activity (score: 60)."
+CAND_0051004,31,0.454394,"Senior Data Scientist with 5 years of experience at CRED, with production-level expertise in Qdrant, LoRA. Open to work with a 15-day notice period and good recruiter responsiveness."
+CAND_0007411,32,0.440689,"Senior Machine Learning Engineer with 8 years of experience at Amazon, with production-level expertise in BM25, Pinecone. Not currently flagged as open to work — may need passive outreach. Strong GitHub activity (score: 90)."
+CAND_0052328,33,0.085758,"Recommendation Systems Engineer with 6 years of experience at Amazon, with production-level expertise in LoRA, QLoRA. Actively seeking roles, highly responsive, and available within 30 days. Strong GitHub activity (score: 78)."
+CAND_0095528,34,0.067956,"Senior Data Scientist with 5 years of experience at Netflix, with production-level expertise in Qdrant, Elasticsearch, RAG. Open to work with a 45-day notice period and good recruiter responsiveness."
+CAND_0030348,35,0.063839,"Machine Learning Engineer with 4 years of experience at BYJU'S, with production-level expertise in Elasticsearch. Open to work with a 45-day notice period and good recruiter responsiveness."
+CAND_0061339,36,0.046734,"Search Engineer with 4 years of experience at Rephrase.ai, with production-level expertise in Milvus. Open to work with a 90-day notice period and good recruiter responsiveness. Strong GitHub activity (score: 86)."
+CAND_0098846,37,0.046545,"AI Engineer with 8 years of experience at upGrad, with production-level expertise in QLoRA, Machine Learning, Qdrant. Open to work with a 45-day notice period and good recruiter responsiveness. Strong GitHub activity (score: 86)."
+CAND_0036863,38,0.045494,"Senior Data Scientist with 4 years of experience at upGrad, with production-level expertise in Qdrant, BM25, FAISS, LoRA. Open to work with a 60-day notice period and good recruiter responsiveness."
+CAND_0091534,39,0.045399,"AI Engineer with 17 years of experience at Flipkart, with production-level expertise in Qdrant, RAG. Not currently flagged as open to work — may need passive outreach. Strong GitHub activity (score: 66)."
+CAND_0001610,40,0.041227,"Machine Learning Engineer with 3 years of experience at Dream11, with production-level expertise in Pinecone, Milvus, NLP, FAISS. Open to work with a 90-day notice period and good recruiter responsiveness."
+CAND_0049538,41,0.031702,"Applied ML Engineer with 6 years of experience at Saarthi.ai, with production-level expertise in Milvus, QLoRA, Elasticsearch. Not currently flagged as open to work — may need passive outreach. Strong GitHub activity (score: 91)."
+CAND_0081053,42,0.029558,"NLP Engineer with 5 years of experience at Glance, with production-level expertise in LoRA, QLoRA, Qdrant, Machine Learning. Open to work with a 90-day notice period and good recruiter responsiveness. Strong GitHub activity (score: 78)."
+CAND_0096142,43,0.029558,"Applied ML Engineer with 5 years of experience at upGrad, with production-level expertise in LoRA, Pinecone, RAG, NLP. Open to work with a 120-day notice period and good recruiter responsiveness. Strong GitHub activity (score: 80)."
+CAND_0044222,44,0.029558,"AI Engineer with 8 years of experience at PolicyBazaar, with production-level expertise in Qdrant, NLP, BM25, QLoRA. Open to work with a 60-day notice period and good recruiter responsiveness."
+CAND_0053591,45,0.029558,"AI Engineer with 5 years of experience at Ola, with production-level expertise in Milvus, Qdrant, BM25, RAG. Open to work with a 60-day notice period and good recruiter responsiveness. Strong GitHub activity (score: 76)."
+CAND_0068811,46,0.028365,"Applied ML Engineer with 8 years of experience at Freshworks, with production-level expertise in Qdrant, Pinecone. Open to work with a 30-day notice period and good recruiter responsiveness."
+CAND_0098952,47,0.027462,"AI Research Engineer with 6 years of experience at CRED, with production-level expertise in NLP. Open to work with a 45-day notice period and good recruiter responsiveness."
+CAND_0091909,48,0.027462,"Machine Learning Engineer with 7 years of experience at Rephrase.ai, with production-level expertise in Pinecone, QLoRA, Qdrant. Open to work with a 45-day notice period and good recruiter responsiveness."
+CAND_0060054,49,0.027462,"AI Engineer with 6 years of experience at Mad Street Den, with production-level expertise in FAISS, Elasticsearch. Not currently flagged as open to work — may need passive outreach."
+CAND_0032807,50,0.027462,"Machine Learning Engineer with 4 years of experience at CRED, with production-level expertise in Milvus, LoRA. Open to work with a 90-day notice period and good recruiter responsiveness."
+CAND_0088878,51,0.027462,"Senior Software Engineer (ML) with 4 years of experience at Paytm, with production-level expertise in Milvus. Not currently flagged as open to work — may need passive outreach."
+CAND_0030953,52,0.027462,"Search Engineer with 8 years of experience at Nykaa, with production-level expertise in Qdrant, RAG. Not currently flagged as open to work — may need passive outreach."
+CAND_0066376,53,0.027329,"Applied ML Engineer with 6 years of experience at Dream11, with production-level expertise in LoRA, NLP, BM25, FAISS. Open to work with a 90-day notice period and good recruiter responsiveness."
+CAND_0041669,54,0.023187,"Recommendation Systems Engineer with 8 years of experience at CRED, with production-level expertise in FAISS, Milvus, QLoRA, Machine Learning. Open to work with a 60-day notice period and good recruiter responsiveness. Strong GitHub activity (score: 71)."
+CAND_0084819,55,0.023187,"Search Engineer with 4 years of experience at Dream11, with production-level expertise in BM25, LoRA. Open to work with a 120-day notice period and good recruiter responsiveness. Strong GitHub activity (score: 56)."
+CAND_0078002,56,0.023187,"Machine Learning Engineer with 6 years of experience at Meta, with production-level expertise in NLP, QLoRA. Open to work with a 60-day notice period and good recruiter responsiveness. Strong GitHub activity (score: 51)."
+CAND_0068985,57,0.022136,"Senior Software Engineer (ML) with 5 years of experience at Locobuzz, with production-level expertise in Machine Learning. Not currently flagged as open to work — may need passive outreach. Strong GitHub activity (score: 62)."
+CAND_0009024,58,0.022136,"Search Engineer with 5 years of experience at Google, with production-level expertise in Qdrant, FAISS, Machine Learning, LoRA. Open to work with a 30-day notice period and good recruiter responsiveness."
+CAND_0076995,59,0.022136,"AI Research Engineer with 4 years of experience at Haptik, with production-level expertise in relevant ML/AI skills. Open to work with a 90-day notice period and good recruiter responsiveness."
+CAND_0037944,60,0.022136,"Senior Data Scientist with 5 years of experience at Vedantu, with production-level expertise in Machine Learning, QLoRA, NLP, BM25. Open to work with a 30-day notice period and good recruiter responsiveness. Strong GitHub activity (score: 83)."
+CAND_0091899,61,0.020868,"Senior Software Engineer (ML) with 6 years of experience at PhonePe, with production-level expertise in Machine Learning, Milvus. Not currently flagged as open to work — may need passive outreach."
+CAND_0057563,62,0.020040,"NLP Engineer with 7 years of experience at Locobuzz, with production-level expertise in RAG, Elasticsearch, QLoRA, Machine Learning. Not currently flagged as open to work — may need passive outreach."
+CAND_0073883,63,0.020040,"AI Specialist with 5 years of experience at Krutrim, with production-level expertise in relevant ML/AI skills. Open to work with a 90-day notice period and good recruiter responsiveness. Strong GitHub activity (score: 66)."
+CAND_0022940,64,0.020040,"Senior Software Engineer (ML) with 5 years of experience at Locobuzz, with production-level expertise in LoRA. Open to work with a 90-day notice period and good recruiter responsiveness."
+CAND_0046924,65,0.020040,"Computer Vision Engineer with 6 years of experience at PharmEasy, with production-level expertise in FAISS. Not currently flagged as open to work — may need passive outreach."
+CAND_0054829,66,0.020040,"Computer Vision Engineer with 6 years of experience at BYJU'S, with production-level expertise in relevant ML/AI skills. Open to work with a 45-day notice period and good recruiter responsiveness."
+CAND_0075138,67,0.020040,"AI Research Engineer with 5 years of experience at Infosys, with production-level expertise in relevant ML/AI skills. Open to work with a 60-day notice period and good recruiter responsiveness."
+CAND_0076831,68,0.020040,"Search Engineer with 4 years of experience at Krutrim, with production-level expertise in Milvus, BM25, NLP. Open to work with a 90-day notice period and good recruiter responsiveness."
+CAND_0037566,69,0.020040,"Machine Learning Engineer with 7 years of experience at LinkedIn, with production-level expertise in Pinecone, NLP, LoRA, QLoRA. Open to work with a 15-day notice period and good recruiter responsiveness. Strong GitHub activity (score: 73)."
+CAND_0013536,70,0.019817,"Applied ML Engineer with 14 years of experience at Haptik, with production-level expertise in NLP, QLoRA, Pinecone, Elasticsearch. Open to work with a 90-day notice period and good recruiter responsiveness. Strong GitHub activity (score: 52)."
+CAND_0077261,71,0.017721,"AI Specialist with 6 years of experience at Meesho, with production-level expertise in relevant ML/AI skills. Open to work with a 60-day notice period and good recruiter responsiveness."
+CAND_0075249,72,0.010885,"Applied ML Engineer with 6 years of experience at Zomato, with production-level expertise in Milvus, Machine Learning, BM25, Pinecone. Open to work with a 45-day notice period and good recruiter responsiveness."
+CAND_0024620,73,0.009139,"AI Engineer with 6 years of experience at PharmEasy, with production-level expertise in BM25, Elasticsearch, QLoRA. Open to work with a 45-day notice period and good recruiter responsiveness."
+CAND_0060072,74,0.008728,"Staff Machine Learning Engineer with 6 years of experience at Amazon, with production-level expertise in Milvus, BM25, Qdrant, Machine Learning. Not currently flagged as open to work — may need passive outreach. Strong GitHub activity (score: 82)."
+CAND_0030827,75,0.008088,"Senior Data Scientist with 5 years of experience at Freshworks, with production-level expertise in NLP, FAISS, Qdrant, BM25. Open to work with a 120-day notice period and good recruiter responsiveness. Strong GitHub activity (score: 52)."
+CAND_0081686,76,0.008088,"Search Engineer with 6 years of experience at Netflix, with production-level expertise in Machine Learning, FAISS, Milvus, QLoRA. Not currently flagged as open to work — may need passive outreach."
+CAND_0051292,77,0.005992,"Applied ML Engineer with 5 years of experience at Freshworks, with production-level expertise in FAISS, NLP, RAG, Elasticsearch. Open to work with a 30-day notice period and good recruiter responsiveness. Strong GitHub activity (score: 62)."
+CAND_0049896,78,0.005992,"Search Engineer with 7 years of experience at Unacademy, with production-level expertise in NLP. Open to work with a 90-day notice period and good recruiter responsiveness."
+CAND_0044855,79,0.005992,"Senior Data Scientist with 7 years of experience at Flipkart, with production-level expertise in Pinecone, Machine Learning, NLP, QLoRA. Not currently flagged as open to work — may need passive outreach."
+CAND_0089552,80,0.003932,"Machine Learning Engineer with 6 years of experience at Netflix, with production-level expertise in Qdrant, BM25, Milvus, Machine Learning. Not currently flagged as open to work — may need passive outreach."
+CAND_0007009,81,0.002096,"Recommendation Systems Engineer with 8 years of experience at Wysa, with production-level expertise in BM25, LoRA, QLoRA. Actively seeking roles, highly responsive, and available within 30 days. Strong GitHub activity (score: 69)."
+CAND_0061655,82,0.002096,"Machine Learning Engineer with 5 years of experience at Krutrim, with production-level expertise in Pinecone, Machine Learning, Qdrant, NLP. Not currently flagged as open to work — may need passive outreach. Strong GitHub activity (score: 56)."
+CAND_0009837,83,0.000676,"Senior Data Scientist with 4 years of experience at Rephrase.ai, with production-level expertise in QLoRA, FAISS, Qdrant. Not currently flagged as open to work — may need passive outreach. Strong GitHub activity (score: 54)."
+CAND_0040887,84,0.000676,"Machine Learning Engineer with 5 years of experience at Netflix, with production-level expertise in FAISS, LoRA, Milvus. Actively seeking roles, highly responsive, and available within 30 days."
+CAND_0028793,85,0.000676,"Search Engineer with 7 years of experience at Google, with production-level expertise in LoRA, QLoRA, NLP. Open to work with a 120-day notice period and good recruiter responsiveness. Strong GitHub activity (score: 83)."
+CAND_0048862,86,0.000676,"Senior Software Engineer (ML) with 6 years of experience at Niramai, with production-level expertise in relevant ML/AI skills. Not currently flagged as open to work — may need passive outreach."
+CAND_0024878,87,0.000676,"AI Specialist with 6 years of experience at HCL, with production-level expertise in relevant ML/AI skills. Open to work with a 60-day notice period and good recruiter responsiveness."
+CAND_0011432,88,0.000676,"Senior Data Scientist with 8 years of experience at Amazon, with production-level expertise in QLoRA, Machine Learning, Elasticsearch. Open to work with a 60-day notice period and good recruiter responsiveness."
+CAND_0020350,89,0.000676,"AI Engineer with 6 years of experience at Zoho, with production-level expertise in NLP, LoRA, FAISS, BM25. Open to work with a 30-day notice period and good recruiter responsiveness."
+CAND_0000165,90,0.000676,"AI Specialist with 7 years of experience at Mad Street Den, with production-level expertise in Qdrant. Strong GitHub activity (score: 62)."
+CAND_0039383,91,0.000676,"Applied ML Engineer with 7 years of experience at Meesho, with production-level expertise in FAISS, QLoRA, NLP, LoRA. Open to work with a 90-day notice period and good recruiter responsiveness. Strong GitHub activity (score: 86)."
+CAND_0002610,92,0.000676,"Senior Software Engineer (ML) with 3 years of experience at Aganitha, with production-level expertise in relevant ML/AI skills."
+CAND_0022870,93,0.000676,"AI Specialist with 7 years of experience at HCL, with production-level expertise in Elasticsearch, Qdrant. Open to work with a 60-day notice period and good recruiter responsiveness."
+CAND_0017090,94,0.000676,"Senior Software Engineer (ML) with 6 years of experience at Paytm, with production-level expertise in relevant ML/AI skills. Open to work with a 60-day notice period and good recruiter responsiveness. Strong GitHub activity (score: 73)."
+CAND_0020877,95,0.000000,"Applied ML Engineer with 5 years of experience at CRED, with production-level expertise in QLoRA, Elasticsearch, Milvus, Qdrant. Not currently flagged as open to work — may need passive outreach. Strong GitHub activity (score: 74)."
+CAND_0045250,96,0.000000,"Applied ML Engineer with 7 years of experience at Rephrase.ai, with production-level expertise in Milvus, LoRA, NLP, BM25. Not currently flagged as open to work — may need passive outreach."
+CAND_0006557,97,0.000000,"NLP Engineer with 8 years of experience at Paytm, with production-level expertise in Elasticsearch, FAISS, Pinecone, Qdrant. Open to work with a 120-day notice period and good recruiter responsiveness."
+CAND_0050454,98,0.000000,"AI Engineer with 7 years of experience at Rephrase.ai, with production-level expertise in QLoRA, FAISS, Qdrant, LoRA. Actively seeking roles, highly responsive, and available within 30 days."
+CAND_0022812,99,0.000000,"Applied ML Engineer with 4 years of experience at Dream11, with production-level expertise in Pinecone, LoRA, Qdrant, NLP. Not currently flagged as open to work — may need passive outreach."
+CAND_0015578,100,0.000000,"AI Engineer with 5 years of experience at Zoho, with production-level expertise in NLP, BM25, Machine Learning, Pinecone. Open to work with a 90-day notice period and good recruiter responsiveness."

@@ -21,6 +21,8 @@ Dataset/candidates.jsonl
 # ─── Prompt / Internal Files ─────────────────────────────────────────────────
 IndiaRuns_Data_AI_Challenge_Prompt.md
 redrob_ranker_prompt.md
+model_improvement_patch_prompt.md
+v3_patch_prompt.md
 
 # ─── Model & Embedding Cache ────────────────────────────────────────────────
 .cache/

@@ -91,10 +91,28 @@ def main(candidates_path: str, output_path: str, use_cache: bool, validate: bool
     # XGBoost rank:ndcg requires integer relevance labels (e.g. 0-4)
     # Convert ce_norm (0.0 - 1.0 floats) to 0-4 integers
     pseudo_labels = (ce_norm * 4).astype(int)
-    top_indices, final_scores = ltr_rank(X, pseudo_labels, top_n=100)
+    top_indices, raw_scores = ltr_rank(X, pseudo_labels, top_n=100)
 
-    # ── Normalize scores to [0, 1] strictly decreasing ───────────────────────
-    final_scores = (final_scores - final_scores.min()) / (final_scores.max() - final_scores.min() + 1e-9)
+    # ── Post-processing (new) ─────────────────────────────────────────────────────
+    from pipeline.ltr_ranker import apply_hard_caps
+    from pipeline.ensemble   import apply_availability_multiplier
+    from pipeline.ranker     import normalize_scores_power
+
+    stage2_top_feats = [stage2_feats[i] for i in top_indices]
+
+    # 1. Hard caps for disqualified profiles
+    final_scores = apply_hard_caps(raw_scores, stage2_top_feats, cap_value=0.05)
+
+    # 2. Soft availability down-weight
+    final_scores = apply_availability_multiplier(final_scores, stage2_top_feats)
+
+    # 3. Re-sort after adjustments (scores may have shifted)
+    resort_order = np.argsort(final_scores)[::-1]
+    top_indices  = np.array(top_indices)[resort_order]
+    final_scores = final_scores[resort_order]
+
+    # 4. Power-transform normalization (expands compressed tail)
+    final_scores = normalize_scores_power(final_scores, power=0.4)
 
     # ── Write submission.csv ──────────────────────────────────────────────────
     print("Writing submission.csv...")

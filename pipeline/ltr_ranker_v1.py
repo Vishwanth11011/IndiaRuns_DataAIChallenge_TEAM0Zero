@@ -86,34 +86,8 @@ def ltr_rank(X: np.ndarray,
     group = [len(X)]  # all candidates are one group
     model.fit(X, pseudo_labels, group=group)
 
-    final_scores = model.predict(X)
-    final_scores[hard_reject] = -999.0  # force hard rejects to the bottom
+    scores = model.predict(X)
+    scores[hard_reject] = -999.0  # force hard rejects to the bottom
 
-    top_indices = np.argsort(final_scores)[::-1][:top_n]
-    top_scores  = final_scores[top_indices]
-    
-    return top_indices, top_scores
-
-def apply_hard_caps(
-    scores: np.ndarray,
-    features_list: list[dict],
-    cap_value: float = 0.05,
-) -> np.ndarray:
-    """
-    Hard cap for candidates who should never appear in the top 80.
-    Sets their score to cap_value (effectively floor at rank ~80+).
-
-    Triggers:
-      - wrong_domain_flag = 1  (CV/Speech specialist with no NLP/IR)
-      - entirely_services_career = 1  (entire career at TCS/Infosys/Wipro etc.)
-      - is_disqualified_title = 1  (Accountant, Business Analyst, HR, etc.)
-    """
-    capped = scores.copy()
-    for i, feat in enumerate(features_list):
-        if (
-            feat.get("wrong_domain_flag", 0) > 0.5 or
-            feat.get("entirely_services_career", 0) > 0.5 or
-            feat.get("is_disqualified_title", 0) > 0.5
-        ):
-            capped[i] = min(capped[i], cap_value)
-    return capped
+    top_indices = np.argsort(scores)[::-1][:top_n]
+    return top_indices, scores[top_indices]

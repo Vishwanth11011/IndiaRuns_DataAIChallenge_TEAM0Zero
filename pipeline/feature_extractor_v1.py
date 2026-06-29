@@ -96,10 +96,7 @@ def extract_features(candidate: dict) -> dict:
     elif yoe < 5:
         features["experience_fit"] = max(0.0, yoe / 5.0 * 0.7)  # ramp up to 70% at 5 years
     else:
-        if yoe <= 12:
-            features["experience_fit"] = max(0.5, 1.0 - (yoe - 9) * 0.08)
-        else:
-            features["experience_fit"] = max(0.2, 1.0 - (yoe - 9) * 0.15)  # steeper after 12y
+        features["experience_fit"] = max(0.4, 1.0 - (yoe - 9) * 0.08)  # gentle decline after 9
     features["years_of_experience_raw"] = yoe
 
     # ── 3. CAREER HISTORY ANALYSIS ───────────────────────────────────────────
@@ -448,8 +445,5 @@ def extract_features(candidate: dict) -> dict:
         edu_text,
         cert_text,
     ])
-
-    features["last_active_date"] = signals.get("last_active_date", "2024-01-01")
-    features["open_to_work"] = bool(signals.get("open_to_work_flag", False))
 
     return features

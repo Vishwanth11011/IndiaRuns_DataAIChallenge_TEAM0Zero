@@ -49,10 +49,10 @@ Our approach was driven by a deep analysis of the provided `candidate_schema.jso
         │
         ▼
  ┌─────────────────────────────────────────────┐
- │  Stage 4: Factual Reason Generation         │
- │  • Deterministic string generation          │
- │  • Cites verified skills, notice period,    │
- │    and GitHub activity for the top 100.     │
+ │  Stage 4: Post-Processing & Adjustments     │
+ │  • Continuous Domain & Services Penalties   │
+ │  • Structural Rank Caps for Passive Cands   │
+ │  • Factual Reason String Generation         │
  └─────────────────────────────────────────────┘
         │
         ▼
@@ -71,10 +71,13 @@ Instead of relying on fuzzy heuristics, our `feature_extractor.py` algorithmical
 ### 2. XGBoost LTR Engine (`rank:ndcg`)
 Instead of guessing linear weights for our 31 features, we use a true Learning-to-Rank approach. We bucket the deep semantic Cross-Encoder scores into 5-tier integer relevance labels and train an XGBoost Ranker (`objective="rank:ndcg"`) on the fly. This allows the model to learn that a high semantic score combined with a 30-day notice period is exponentially better than a high semantic score with a 120-day notice period.
 
-### 3. Honeypot Elimination
-To handle the data anomalies discovered in our analysis, the pipeline implements strict anomaly detection, masking invalid profiles' final LTR scores to `-999.0` to guarantee they are mathematically eliminated from the top 100.
+### 3. Honeypot Elimination & Graduated Penalties (v2.4 Optimizations)
+To handle the data anomalies discovered in our analysis, the pipeline calculates continuous "severity scores" (from 0.0 to 1.0) for candidates who stray out of domain (e.g. Computer Vision Engineers) or have spent their entire career at IT services firms. Instead of brittle binary cutoffs, a graduated penalty curve (`1.0 - (worst_severity^1.5 * 0.95)`) crushes severe violations while smoothly discounting borderline edge cases.
 
-### 4. Trained and Executed on Google Colab (FP16 GPU)
+### 4. Structural Rank Caps for Passive Candidates
+Certain FAANG candidates (Meta, Netflix) are highly technically qualified but are explicitly marked as *not* open to work. To prevent these passive candidates from dominating the top 15 results and burying active job seekers, we enforce a strict structural rank cap: a maximum of 1 passive candidate is allowed in the top 15 ranks. Excess passive candidates are gracefully demoted, ensuring high visibility for active candidates without deleting strong profiles from the overall top 100.
+
+### 5. Trained and Executed on Google Colab (FP16 GPU)
 Running `BAAI/bge-large-en-v1.5` on 100,000 massive text blobs is computationally heavy. We trained and executed this pipeline on **Google Colab using a T4 GPU**. 
 By explicitly binding our PyTorch models to `torch.float16`, we successfully utilized FP16 Tensor Cores, halving VRAM usage, allowing batch sizes of 256, and slashing a 10+ hour CPU workload down to mere minutes.
 

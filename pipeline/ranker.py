@@ -21,3 +21,29 @@ def normalize_scores_power(scores: np.ndarray, power: float = 0.4) -> np.ndarray
             
         normalized[valid_mask] = norm_valid
     return normalized
+
+def apply_domain_and_services_penalty(
+    scores: np.ndarray,
+    features_list: list[dict],
+) -> np.ndarray:
+    """
+    Graduated penalty based on continuous severity scores.
+    severity 1.0 → score multiplied by 0.05 (effectively eliminated)
+    severity 0.5 → score multiplied by ~0.50
+    severity 0.0 → no penalty
+    """
+    adjusted = scores.copy()
+    for i, feat in enumerate(features_list):
+        domain_sev   = feat.get("wrong_domain_severity", 0.0)
+        services_sev = feat.get("services_severity", 0.0)
+        worst_severity = max(domain_sev, services_sev)
+
+        # Smooth penalty curve: penalty_multiplier = 1 - (severity^1.5 * 0.95)
+        # severity 1.0 -> multiplier 0.05
+        # severity 0.7 -> multiplier ~0.45
+        # severity 0.5 -> multiplier ~0.66
+        # severity 0.0 -> multiplier 1.00
+        penalty_multiplier = 1.0 - (worst_severity ** 1.5) * 0.95
+        adjusted[i] *= penalty_multiplier
+
+    return adjusted

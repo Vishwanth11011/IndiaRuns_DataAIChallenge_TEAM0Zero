@@ -449,6 +449,78 @@ def extract_features(candidate: dict) -> dict:
         cert_text,
     ])
 
+    # ── Wrong domain severity (continuous, not binary) ───────────────────────────
+    cv_speech_skills = {
+        "computer vision", "image classification", "object detection", "object recognition",
+        "speech recognition", "tts", "text-to-speech", "asr", "automatic speech recognition",
+        "robotics", "ros", "lidar", "stereo vision", "optical flow", "image segmentation",
+        "facial recognition", "ocr",
+    }
+    nlp_ir_skills = {
+        "nlp", "natural language processing", "information retrieval", "search",
+        "ranking", "embeddings", "bert", "transformers", "rag", "vector", "faiss",
+        "bm25", "semantic search", "text classification", "question answering",
+        "sentence-transformers", "cross-encoder", "hybrid search",
+    }
+
+    cand_skill_names = {s["name"].lower() for s in skills}
+    cv_speech_count = sum(1 for s in cand_skill_names if any(cv in s for cv in cv_speech_skills))
+    nlp_ir_count    = sum(1 for s in cand_skill_names if any(nlp in s for nlp in nlp_ir_skills))
+
+    # Also check current_title and career history for CV/Speech-specific role language
+    title_lower = profile.get("current_title", "").lower()
+    title_is_cv_speech = any(kw in title_lower for kw in
+        ["computer vision", "cv engineer", "speech engineer", "robotics engineer"])
+
+    # Severity score: 0 = no concern, 1 = severe mismatch
+    if cv_speech_count == 0:
+        domain_severity = 0.0
+    elif nlp_ir_count >= 2:
+        domain_severity = 0.1   # has real NLP/IR depth alongside CV — not a concern
+    elif nlp_ir_count == 1:
+        domain_severity = 0.5   # only token NLP/IR presence — moderate concern
+    else:
+        domain_severity = 1.0   # zero NLP/IR skills at all — severe mismatch
+
+    # Title is the strongest signal — if their actual job title says Computer Vision
+    # Engineer, weight this heavily regardless of skill list padding
+    if title_is_cv_speech:
+        domain_severity = max(domain_severity, 0.85)
+
+    features["wrong_domain_severity"] = domain_severity
+    features["wrong_domain_flag"] = float(domain_severity >= 0.7)   # keep for hard reject logic
+
+    # ── Services firm severity (continuous, not binary) ──────────────────────────
+    # Note: SERVICES_FIRMS is already defined globally at the top of the file!
+    # So we don't redefine it here to avoid UnboundLocalError.
+    
+    services_months = sum(
+        j.get("duration_months", 0) for j in career
+        if any(s in j.get("company", "").lower() for s in SERVICES_FIRMS)
+    )
+    total_months = sum(j.get("duration_months", 0) for j in career)
+    services_fraction = services_months / max(total_months, 1)
+
+    current_company_lower = profile.get("current_company", "").lower()
+    currently_at_services = any(s in current_company_lower for s in SERVICES_FIRMS)
+
+    # Severity score, graduated by fraction AND current-employment signal
+    if services_fraction >= 0.85:
+        services_severity = 1.0
+    elif services_fraction >= 0.60:
+        services_severity = 0.75
+    elif services_fraction >= 0.35:
+        services_severity = 0.45
+    else:
+        services_severity = 0.0
+
+    # Currently employed at a services firm is a strong standalone signal
+    if currently_at_services:
+        services_severity = max(services_severity, 0.70)
+
+    features["services_severity"] = services_severity
+    features["entirely_services_career"] = float(services_severity >= 0.70)   # keep for hard reject
+
     features["last_active_date"] = signals.get("last_active_date", "2024-01-01")
     features["open_to_work"] = bool(signals.get("open_to_work_flag", False))
 

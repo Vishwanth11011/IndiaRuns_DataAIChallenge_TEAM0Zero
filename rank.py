@@ -94,32 +94,65 @@ def main(candidates_path: str, output_path: str, use_cache: bool, validate: bool
     top_indices, raw_scores = ltr_rank(X, pseudo_labels, top_n=100)
 
     # ── Post-processing (new) ─────────────────────────────────────────────────────
-    from pipeline.ltr_ranker import apply_hard_caps
-    from pipeline.ensemble   import apply_availability_multiplier
-    from pipeline.ranker     import normalize_scores_power
+    from pipeline.ranker import apply_domain_and_services_penalty, normalize_scores_power
+    from pipeline.ensemble import apply_availability_multiplier, enforce_availability_in_top_n
 
     stage2_top_feats = [stage2_feats[i] for i in top_indices]
+    stage2_top_indices = list(top_indices)
 
-    # 1. Hard caps for disqualified profiles
-    final_scores = apply_hard_caps(raw_scores, stage2_top_feats, cap_value=0.05)
+    # Step 1: graduated domain/services penalty (replaces old hard caps)
+    scores = apply_domain_and_services_penalty(raw_scores, stage2_top_feats)
 
-    # 2. Soft availability down-weight
-    final_scores = apply_availability_multiplier(final_scores, stage2_top_feats)
+    # Step 2: existing availability multiplier (keep from earlier patch — still helps)
+    scores = apply_availability_multiplier(scores, stage2_top_feats)
 
-    # 3. Re-sort after adjustments (scores may have shifted)
-    resort_order = np.argsort(final_scores)[::-1]
-    top_indices  = np.array(top_indices)[resort_order]
-    final_scores = final_scores[resort_order]
+    # Step 3: re-sort after steps 1 & 2
+    resort_order       = np.argsort(scores)[::-1]
+    stage2_top_indices = [stage2_top_indices[i] for i in resort_order]
+    scores             = scores[resort_order]
+    stage2_top_feats   = [stage2_top_feats[i] for i in resort_order]
 
-    # 4. Power-transform normalization (expands compressed tail)
-    final_scores = normalize_scores_power(final_scores, power=0.4)
+    # Step 4: NEW — hard structural cap on unavailable candidates in top 15
+    stage2_top_indices, scores, stage2_top_feats = enforce_availability_in_top_n(
+        stage2_top_indices, scores, stage2_top_feats,
+        top_n_strict=15,
+        max_unavailable_in_top_n=1,
+    )
+
+    # After structural cap re-sorts, clamp any score at position i
+    # to be strictly less than the score at position i-1
+    # This handles the case where demoted high-scoring candidates
+    # would create an inversion after normalization
+    for i in range(1, len(scores)):
+        if scores[i] > scores[i-1]:
+            scores[i] = scores[i-1] - 1e-6
+
+    # Step 5: power-transform normalize
+    final_scores = normalize_scores_power(scores, power=0.4)
+
+    # ── Sanity checks before writing ──────────────────────────────────────────────
+    target_ids = {
+        "CAND_0054829", "CAND_0046924",  # CV engineers
+        "CAND_0075138", "CAND_0022870", "CAND_0024878",  # services firms
+    }
+    stage2_top_candidate_ids = [stage2_cands[i].get("candidate_id", "") for i in stage2_top_indices]
+    still_present_ranks = [
+        (cid, rank+1) for rank, cid in enumerate(stage2_top_candidate_ids) if cid in target_ids
+    ]
+    print(f"Previously-leaked candidates still in top 100: {still_present_ranks}")
+    print(f"  (target: empty list, or only at very low ranks 90+)")
+
+    unavailable_in_top15 = sum(
+        1 for f in stage2_top_feats[:15] if not f.get("open_to_work", True)
+    )
+    print(f"Not-open-to-work in top 15: {unavailable_in_top15} (target: ≤1)")
 
     # ── Write submission.csv ──────────────────────────────────────────────────
     print("Writing submission.csv...")
     with open(output_path, "w", newline="") as f:
         writer = csv.writer(f)
         writer.writerow(["candidate_id", "rank", "score", "reasoning"])
-        for rank, (i, score) in enumerate(zip(top_indices, final_scores), start=1):
+        for rank, (i, score) in enumerate(zip(stage2_top_indices, final_scores), start=1):
             cand = stage2_cands[i]
             feat = stage2_feats[i]
             reasoning = generate_reasoning(cand, feat, score)
